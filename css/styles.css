@@ -1,0 +1,95 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+}
+
+/* top navbar */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav .anchordiv {
+  margin-left: 50px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.logodiv {
+  margin-right: 15px;
+  cursor: pointer;
+  z-index: 500;
+}
+
+#logo {
+  font-size: 60px;
+  color: #fff;
+}
+/* end topnavbar */
+
+/* main content */
+main.content {
+  margin: 7rem 2rem;
+}
+/* end main content */
+
+/* sidebar */
+div.sidebar {
+  height: 100%;
+  z-index: 200;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15%;
+  display: flex;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-out;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+/* end sidebar */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
