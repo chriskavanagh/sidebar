@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Document</title>
+    <title>Sidebar</title>
   </head>
   <body>
     <header>
@@ -24,30 +24,38 @@
     </header>
     <div class="cover"></div>
     <div class="sidebar">
-      <nav class="nav">
-        <ul class="ul">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about"></a>About</li>
-          <li><a href="/contact">Contact</a></li>
+      <h1>Youtube</h1>
+      <nav class="side-nav">
+        <ul class="side-ul">
+          <li class="side-li"><a class="side-anchor" href="/">Home</a></li>
+          <li class="side-li">
+            <a class="side-anchor" href="/about">About</a>
+          </li>
+          <li class="side-li">
+            <a class="side-anchor" href="/contact">Contact</a>
+          </li>
         </ul>
       </nav>
     </div>
-    <main class="content">
-      <h1>Hello World</h1>
-      <h2>Goodbye World</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-        adipisci doloremque, a quae, ipsum asperiores architecto doloribus ipsa
-        obcaecati quos quasi dolorem temporibus quaerat voluptate dolorum et
-        mollitia. Consequuntur, voluptatum!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-        tempore voluptatibus ipsa vitae itaque quisquam fugiat corporis,
-        consequuntur molestias hic? Ipsum, deserunt sint excepturi doloremque
-        dolore alias soluta nobis! Asperiores!
-      </p>
-    </main>
+
+    <div class="wrapper">
+      <main class="content">
+        <h1>Hello World</h1>
+        <h2>Goodbye World</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+          adipisci doloremque, a quae, ipsum asperiores architecto doloribus
+          ipsa obcaecati quos quasi dolorem temporibus quaerat voluptate dolorum
+          et mollitia. Consequuntur, voluptatum!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+          tempore voluptatibus ipsa vitae itaque quisquam fugiat corporis,
+          consequuntur molestias hic? Ipsum, deserunt sint excepturi doloremque
+          dolore alias soluta nobis! Asperiores!
+        </p>
+      </main>
+    </div>
 
     <script>
       const button = document.querySelector(".logodiv");
