@@ -22,6 +22,8 @@
         </div>
       </div>
     </header>
+
+    <section class="the__side__bar">
     <div class="cover"></div>
     <div class="sidebar">
       <h1>Youtube</h1>
@@ -37,6 +39,7 @@
         </ul>
       </nav>
     </div>
+  </section>
 
     <div class="wrapper">
       <main class="content">
@@ -57,15 +60,6 @@
       </main>
     </div>
 
-    <script>
-      const button = document.querySelector(".logodiv");
-      const cover = document.querySelector(".cover");
-      const sidebar = document.querySelector(".sidebar");
-      button.addEventListener("click", function() {
-        console.log("Sanity Check");
-        cover.classList.toggle("overlay");
-        sidebar.classList.toggle("open");
-      });
-    </script>
+    <script type="text/javascript" src="js/eventScript.js" />
   </body>
 </html>
